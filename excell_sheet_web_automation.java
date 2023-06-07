@@ -1,4 +1,4 @@
-	@Test
+@Test
 	public void excel_sheet() throws IOException, InterruptedException {
 
         WebDriver driver = new FirefoxDriver();
@@ -27,11 +27,12 @@
 
                     // Enter the search query
                     searchBox.sendKeys(searchQuery);
-
+                   
                     // Submit the form
                     searchBox.submit();
-
-                    Thread.sleep(3000);
+                    
+                    Thread.sleep(10000);
+                    System.out.println(searchQuery+" ▶ completed ✅");
                     // Print the page title (optional)
                     System.out.println("Page Title: " + driver.getTitle());
                 }
